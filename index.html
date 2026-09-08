@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نظام القادة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div>
+      <h1>نظام القادة</h1>
+      <div class="sub">توزيع القادة على المواقع — 4 أسابيع، مقروءة لايف من جوجل شيت (عرض فقط)</div>
+    </div>
+  </div>
+  <div class="view-switch">
+    <button class="view-btn active" id="btn-schedule">الجدول اليومي</button>
+    <button class="view-btn" id="btn-leaderboard">ترتيب القادة</button>
+  </div>
+  <div class="week-tabs" id="week-tabs"></div>
+  <div class="tabs" id="tabs"></div>
+</header>
+
+<div class="layout" id="schedule-view">
+  <main>
+    <div class="lb-note" id="sched-status" style="display:none;"></div>
+
+    <div class="lotd">
+      <div>
+        <span class="code">LEADER OF THE DAY</span>
+        <div id="lotd-box"></div>
+      </div>
+    </div>
+    <div id="buildings"></div>
+    <div class="stats" id="stats"></div>
+  </main>
+
+  <aside>
+    <h2>قائمة القادة</h2>
+    <span class="roster-count" id="roster-count"></span>
+    <div id="roster"></div>
+  </aside>
+</div>
+
+<div id="leaderboard-view" style="display:none; padding:24px 28px;">
+  <div class="lb-note" id="lb-status">
+    الترتيب هنا مسحوب من عمود <b>ترتيب الدرجات</b> في شيت <b>INFO</b> (عمود A = الاسم) — مش متولد من التوزيعة. بنحاول نجيبه لايف من جوجل شيت أول ما تفتح الصفحة.
+  </div>
+  <div class="lb-actions">
+    <button class="view-btn" id="lb-refresh">تحديث من الشيت</button>
+    <button class="view-btn" id="lb-paste-toggle">لصق البيانات يدويًا</button>
+  </div>
+  <div id="lb-paste-box" style="display:none;">
+    <p class="lb-hint">لو التحديث اللايف مش شغال (السبريد شيت لازم يكون Anyone with the link - Viewer)، انسخ عمودي الاسم وعمود "ترتيب الدرجات" من شيت INFO والصقهم هنا، صف لكل قائد:</p>
+    <textarea id="lb-paste-area" rows="8" placeholder="أحمد عاصم	42
+ندى محمد	37
+..."></textarea>
+    <button class="view-btn" id="lb-paste-apply">استخدم البيانات دي</button>
+  </div>
+  <table class="lb" id="lb-table">
+    <thead>
+      <tr><th>#</th><th>القائد</th><th>ترتيب الدرجات</th></tr>
+    </thead>
+    <tbody id="lb-body"></tbody>
+  </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -26,15 +26,15 @@ const BUILDINGS = [
     {code:"WC.W", label:"حمام سيدات"}, {code:"FRIDGE", label:"الثلاجة"}, {code:"CANTEEN", label:"الكانتين"},
     {code:"B.C.B", label:"ب.ك.ب"}, {code:"LAB1", label:"معمل 1"}, {code:"LAB2", label:"معمل 2"},
   ]},
-  { name:"مبنى A", locs:[
+  { name:"مبنى B", locs:[
     {code:"A.ST1", label:"سلم 1"}, {code:"A.ST2", label:"سلم 2"}, {code:"A.FLR.F", label:"الدور - سيدات"},
     {code:"A.FLR.M", label:"الدور - رجال"}, {code:"A.SV", label:"إشراف"}, {code:"A.LEAD", label:"قائد المبنى", isLeader:true},
   ]},
-  { name:"مبنى B", locs:[
+  { name:"مبنى C", locs:[
     {code:"B.ST", label:"السلم"}, {code:"B.F1.F", label:"دور 1 - سيدات"}, {code:"B.F1.M", label:"دور 1 - رجال"},
     {code:"B.F2.F", label:"دور 2 - سيدات"}, {code:"B.F2.M", label:"دور 2 - رجال"}, {code:"B.LEAD", label:"قائد المبنى", isLeader:true},
   ]},
-  { name:"مبنى C", locs:[
+  { name:"مبنى A", locs:[
     {code:"C.ST1", label:"سلم 1"}, {code:"C.ST2", label:"سلم 2"}, {code:"C.F1.A", label:"دور 1 - أ"},
     {code:"C.F1.B", label:"دور 1 - ب"}, {code:"C.F2.A", label:"دور 2 - أ"}, {code:"C.F2.B", label:"دور 2 - ب"},
     {code:"C.LEAD", label:"قائد المبنى", isLeader:true},

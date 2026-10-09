@@ -22,7 +22,7 @@ const DAY_CODES = ["SUN","MON","THU","WED","THR"];
 const BUILDINGS = [
   { name:"خارج المبنى", locs:[
     {code:"GATE", label:"البوابة"}, {code:"PATH1", label:"ممر 1"}, {code:"PATH2", label:"ممر 2"},
-    {code:"PATH3", label:"ممر 3"}, {code:"WC.M1", label:"حمام رجال 1"}, {code:"WC.M2", label:"حمام رجال 2"},
+    {code:"WC.M1", label:"حمام رجال 1"}, {code:"WC.M2", label:"حمام رجال 2"},
     {code:"WC.W", label:"حمام سيدات"}, {code:"FRIDGE", label:"الثلاجة"}, {code:"CANTEEN", label:"الكانتين"},
     {code:"B.C.B", label:"ب.ك.ب"}, {code:"LAB1", label:"معمل 1"}, {code:"LAB2", label:"معمل 2"},
   ]},
@@ -41,12 +41,13 @@ const BUILDINGS = [
   ]},
 ];
 
-// ترتيب أعمدة شيت التوزيع (0 = عمود A) — ثابت حسب شكل الشيت الحالي
+// ترتيب أعمدة شيت التوزيع (0 = عمود A) — بعد حذف عمود "ممر 3" من الشيت
+// كل الأعمدة اللي بعده اتزحزحت عمود لورا
 const COLUMN_MAP = {
-  GATE:2, PATH1:3, PATH2:4, PATH3:5, "WC.M1":6, "WC.M2":7, "WC.W":8, FRIDGE:9, CANTEEN:10, "B.C.B":11, LAB1:12, LAB2:13,
-  "A.ST1":15, "A.ST2":16, "A.FLR.F":17, "A.FLR.M":18, "A.SV":19, "A.LEAD":20,
-  "B.ST":22, "B.F1.F":23, "B.F1.M":24, "B.F2.F":25, "B.F2.M":26, "B.LEAD":27,
-  "C.ST1":29, "C.ST2":30, "C.F1.A":31, "C.F1.B":32, "C.F2.A":33, "C.F2.B":34, "C.LEAD":35,
+  GATE:2, PATH1:3, PATH2:4, "WC.M1":5, "WC.M2":6, "WC.W":7, FRIDGE:8, CANTEEN:9, "B.C.B":10, LAB1:11, LAB2:12,
+  "A.ST1":14, "A.ST2":15, "A.FLR.F":16, "A.FLR.M":17, "A.SV":18, "A.LEAD":19,
+  "B.ST":21, "B.F1.F":22, "B.F1.M":23, "B.F2.F":24, "B.F2.M":25, "B.LEAD":26,
+  "C.ST1":28, "C.ST2":29, "C.F1.A":30, "C.F1.B":31, "C.F2.A":32, "C.F2.B":33, "C.LEAD":34,
 };
 const LOTD_COL = 1;
 const DAY_COL = 0;

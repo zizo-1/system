@@ -27,8 +27,8 @@ const BUILDINGS = [
     {code:"B.C.B", label:"ب.ك.ب"}, {code:"LAB1", label:"معمل 1"}, {code:"LAB2", label:"معمل 2"},
   ]},
   { name:"مبنى B", locs:[
-    {code:"A.ST1", label:"سلم 1"}, {code:"A.ST2", label:"سلم 2"}, {code:"A.FLR.F", label:"الدور "},
-    {code:"A.FLR.M", label:"الدور"}, {code:"A.SV", label:"إشراف"}, {code:"A.LEAD", label:"قائد المبنى", isLeader:true},
+    {code:"A.ST1", label:"سلم تاله"}, {code:"A.ST2", label:"سلم 2"}, {code:"A.FLR.F", label:"الدور "},
+    {code:"A.FLR.M", label:"الدور"}, {code:"A.SV", label:"إشراف"},
   ]},
   { name:"مبنى C", locs:[
     {code:"B.ST", label:"السلم"}, {code:"B.F1.F", label:"دور 1 "}, {code:"B.F1.M", label:"دور 1 "},

@@ -28,7 +28,7 @@ const BUILDINGS = [
   ]},
   { name:"مبنى B", locs:[
     {code:"A.ST1", label:"سلم تاله"}, {code:"A.ST2", label:"سلم 2"}, {code:"A.FLR.F", label:"الدور "},
-    {code:"A.FLR.M", label:"الدور"}, {code:"A.SV", label:"إشراف"},
+    {code:"A.FLR.M", label:"الدور"}, {code:"A.SV", label:"دور اول تالته"},
   ]},
   { name:"مبنى C", locs:[
     {code:"B.ST", label:"السلم"}, {code:"B.F1.F", label:"دور 1 "}, {code:"B.F1.M", label:"دور 1 "},

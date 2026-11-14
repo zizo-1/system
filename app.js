@@ -46,8 +46,8 @@ const BUILDINGS = [
 const COLUMN_MAP = {
   GATE:2, PATH1:3, PATH2:4, "WC.M1":5, "WC.M2":6, "WC.W":7, FRIDGE:8, CANTEEN:9, "B.C.B":10, LAB1:11, LAB2:12,
   "A.ST1":14, "A.ST2":15, "A.FLR.F":16, "A.FLR.M":17, "A.SV":18,
-  "B.ST":21, "B.F1.F":22, "B.F1.M":23, "B.F2.F":24, "B.F2.M":25, "B.LEAD":26,
-  "C.ST1":28, "C.ST2":29, "C.F1.A":30, "C.F1.B":31, "C.F2.A":32, "C.F2.B":33, "C.LEAD":34,
+  "B.ST":20, "B.F1.F":21, "B.F1.M":22, "B.F2.F":23, "B.F2.M":24, "B.LEAD":25,
+  "C.ST1":27, "C.ST2":28, "C.F1.A":29, "C.F1.B":30, "C.F2.A":31, "C.F2.B":32, "C.LEAD":33,
 };
 const LOTD_COL = 1;
 const DAY_COL = 0;
